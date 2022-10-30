@@ -1,4 +1,4 @@
-Demo: https://magikinside.com/
+Demo: https://magikinside.vercel.app/
 
 ### Setup
 Run `yarn install`
