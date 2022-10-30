@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.link {
+    text-decoration-line: none;
+}
+
+.tooltip:before {
+    background-color: #ffffff;
+    color: #171717;
+}
+
+.team-card {
+    -webkit-box-shadow: 0 0 10px white;
+    -moz-box-shadow: 0 0 10px white;
+    box-shadow:0 0 10px white;
+}
+
+.team-card:hover {
+    -webkit-box-shadow:0 0 20px white;
+    -moz-box-shadow: 0 0 20px white;
+    box-shadow:0 0 20px white;
+}
+
+.coming-soon {
+    text-shadow:0 0 1px whitesmoke;
+}
+
+.timer-box {
+    -webkit-box-shadow:0 0 3px white;
+    -moz-box-shadow: 0 0 3px white;
+    box-shadow:0 0 3px white;
+}
+
+.faq-box:focus {
+    -webkit-box-shadow:0 0 5px white;
+    -moz-box-shadow: 0 0 5px white;
+    box-shadow:0 0 5px white;
+}
+
+.hero {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #232526; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #000000, #141414); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #000000, #141414); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.roadmap-section {
+    background: #171717;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roadmap-section::before {
+    content: "";
+    background-image: url("/roadmap-bg.webp");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.05;
+}
+
+.team-section {
+    background: #171717;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.team-section::before {
+    content: "";
+    background-image: url("/team-bg.webp");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.05;
+}
+
+@font-face {
+    font-family: 'AHS';
+    src: local('AHS'), url("/fonts/ahs_font.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Roboto-2';
+    src: local('Roboto-2'), url("/fonts/roboto-2.ttf") format('truetype');
+}
+
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: all .4s ease-in-out;
+}
+
+.link-underline-white {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#ffffff, #cecece)
+}
+
+.link-underline:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%;
+}
+
+.mint-button:hover {
+    -webkit-filter: drop-shadow(0 0 5px white);
+    filter: drop-shadow(0 0 5px white);
+}
